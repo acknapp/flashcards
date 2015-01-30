@@ -22,7 +22,8 @@ def usage():
     :return the arguments:
     """
     parser = argparse.ArgumentParser(description="Command line flash card program")
-    parser.add_argument("-f", "--file", help="Json file with questions and answers in it")
+    parser.add_argument("-f", "--file", help="Json file with questions and answers in it.\n"
+                                             "The format of the file should be {q1: a1, q2: a2 }")
     return parser.parse_args()
 
 
